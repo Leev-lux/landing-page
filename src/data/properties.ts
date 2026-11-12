@@ -36,8 +36,8 @@ export const properties: PropertyRecord[] = [
     bathrooms: 1.5,
     image: '/Captura_de_pantalla_2026-10-27_a_la(s)_10.28.15_a.m..png',
     imageAlt: {
-      es: 'Aurora Suite en Santiago',
-      en: 'Aurora Suite in Santiago',
+      es: 'Sala de Soha Suites A11 en Santiago',
+      en: 'Living room at Soha Suites A11 in Santiago',
     },
     airbnbUrl: 'https://www.airbnb.com/rooms/54195008',
   },

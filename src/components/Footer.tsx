@@ -129,7 +129,7 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-charcoal/10 py-6 sm:flex-row">
           <p className="text-sm text-charcoal/55">
-            © {new Date().getFullYear()} Lee Luxury Stays. {t(ui.footer.rights)}
+            © {new Date().getFullYear()} Leev Luxury Stays. {t(ui.footer.rights)}
           </p>
           <p className="text-sm text-charcoal/45">Santiago, República Dominicana</p>
         </div>

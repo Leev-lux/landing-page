@@ -172,12 +172,12 @@ export interface GalleryItem {
 }
 
 export const galleryImages: GalleryItem[] = [
-  { alt: { es: 'Espacio Leev 1', en: 'Leev space 1' } },
-  { alt: { es: 'Espacio Leev 2', en: 'Leev space 2' } },
-  { alt: { es: 'Espacio Leev 3', en: 'Leev space 3' } },
-  { alt: { es: 'Espacio Leev 4', en: 'Leev space 4' } },
-  { alt: { es: 'Espacio Leev 5', en: 'Leev space 5' } },
-  { alt: { es: 'Espacio Leev 6', en: 'Leev space 6' } },
-  { alt: { es: 'Espacio Leev 7', en: 'Leev space 7' } },
-  { alt: { es: 'Espacio Leev 8', en: 'Leev space 8' } },
+  { src: '/COMEDOR.jpg.jpeg', alt: { es: 'Cocina y comedor', en: 'Kitchen and dining' } },
+  { src: '/Captura_de_pantalla_2026-10-27_a_la(s)_10.28.56_a.m..png', alt: { es: 'Sala acogedora', en: 'Cozy living room' } },
+  { src: '/IMG_93033OIcWf.jpg', alt: { es: 'Balcón con vista a la montaña', en: 'Balcony with mountain view' } },
+  { src: '/Captura_de_pantalla_2026-10-27_a_la(s)_10.30.22_a.m..png', alt: { es: 'Habitación principal', en: 'Main bedroom' } },
+  { src: '/Captura_de_pantalla_2026-11-03_a_la(s)_3.48.25_p.m..png', alt: { es: 'Sala amplia con vista', en: 'Spacious living room with a view' } },
+  { src: '/Captura_de_pantalla_2026-10-27_a_la(s)_11.40.27_a.m..png', alt: { es: 'Sala con cortinas de lino', en: 'Living room with linen curtains' } },
+  { src: '/image.png', alt: { es: 'Comedor y cocina', en: 'Dining area and kitchen' } },
+  { src: '/Captura_de_pantalla_2026-10-27_a_la(s)_10.28.15_a.m..png', alt: { es: 'Sala con acentos de color', en: 'Living room with color accents' } },
 ];

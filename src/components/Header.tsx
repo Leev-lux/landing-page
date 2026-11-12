@@ -70,7 +70,7 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-4 lg:flex">
-          <LanguageSwitcher />
+          <LanguageSwitcher variant="dark" />
           <a
             href="#propiedades"
             onClick={(e) => handleAnchor(e, 'propiedades')}
@@ -81,7 +81,7 @@ export function Header() {
         </div>
 
         <div className="flex items-center gap-2 lg:hidden">
-          <LanguageSwitcher />
+          <LanguageSwitcher variant="dark" />
           <button
             type="button"
             onClick={() => setMenuOpen((o) => !o)}
