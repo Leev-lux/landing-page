@@ -314,6 +314,18 @@ export const guidePlaces: GuidePlace[] = [
 
   // Rent a car
   {
+    name: 'Eight Brother Rent-A-Car',
+    category: 'cars',
+    lat: 19.384843,
+    lng: -70.6099777,
+    placeId: 'ChIJ6yGcgMXRsY4Rh4ARa1wzmKg',
+    phone: '+1 809-612-3671',
+    note: {
+      es: 'A pasos de 8 Brothers Tower, en la Av. Víctor Manuel Espaillat. Abierta 24 horas.',
+      en: 'Steps from 8 Brothers Tower, on Av. Víctor Manuel Espaillat. Open 24 hours.',
+    },
+  },
+  {
     name: 'AmeriRent Santiago',
     category: 'cars',
     phone: '+1 809-626-8684',
