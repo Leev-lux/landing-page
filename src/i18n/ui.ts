@@ -138,14 +138,19 @@ export const ui = {
 
   guide: {
     eyebrow: { es: 'Guía de Santiago', en: 'Santiago Guide' },
-    title: { es: 'Dónde alojarte en Santiago', en: 'Where to Stay in Santiago' },
+    title: { es: 'Todo lo que necesitas, cerca de ti', en: 'Everything you need, close by' },
     intro: {
-      es: 'Descubre opciones de alojamiento amueblado que te ayudarán a planificar tu visita a Santiago, República Dominicana.',
-      en: 'Discover furnished accommodation options that help you plan your visit to Santiago, Dominican Republic.',
+      es: 'Elige tu edificio y descubre qué ver, dónde comer y dónde hacer tus compras, con el tiempo aproximado para llegar.',
+      en: 'Choose your building to see what to visit, where to eat and where to shop, with an estimated travel time.',
     },
-    placeholder: {
-      es: 'Aquí se integrará una guía interactiva personalizada de Santiago.',
-      en: 'A custom interactive Santiago guide will be integrated here.',
+    stayingAt: { es: 'Me hospedo en', en: "I'm staying at" },
+    all: { es: 'Todo', en: 'All' },
+    walk: { es: 'a pie', en: 'walk' },
+    drive: { es: 'en carro', en: 'drive' },
+    map: { es: 'Ver en el mapa', en: 'View on map' },
+    disclaimer: {
+      es: 'Tiempos y distancias aproximados; pueden variar según el tráfico. Confirma los horarios antes de ir.',
+      en: 'Times and distances are approximate and may vary with traffic. Check opening hours before you go.',
     },
   },
 
