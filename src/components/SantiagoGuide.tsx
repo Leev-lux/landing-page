@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { ArrowUpRight, Car, Footprints, MapPin } from 'lucide-react';
+import { ArrowUpRight, Car, Footprints, MapPin, Phone } from 'lucide-react';
 import { useLang, ui } from '../context/LanguageContext';
 import {
   guideBuildings,
@@ -46,7 +46,8 @@ export function SantiagoGuide() {
     () =>
       guidePlaces
         .filter((p) => !p.only || p.only.includes(buildingId))
-        .filter((p) => category === 'all' || p.category === category)
+        // 'Todo' leaves out the long rent-a-car list; it has its own tab.
+        .filter((p) => (category === 'all' ? p.category !== 'cars' : p.category === category))
         .map((p) => ({
           ...p,
           trip: estimate(haversineKm(building.lat, building.lng, p.lat, p.lng)),
@@ -131,6 +132,15 @@ export function SantiagoGuide() {
                     </p>
                     <h3 className="mt-1 text-lg font-medium leading-snug text-charcoal">{p.name}</h3>
                     <p className="mt-1 text-sm leading-relaxed text-charcoal/65">{t(p.note)}</p>
+                    {p.phone && (
+                      <a
+                        href={`tel:${p.phone.replace(/[^+\d]/g, '')}`}
+                        className="mt-2 inline-flex items-center gap-1.5 text-sm font-medium tabular-nums text-charcoal/80 transition-colors hover:text-gold-dark"
+                      >
+                        <Phone size={14} className="text-gold-dark" aria-hidden="true" />
+                        {p.phone}
+                      </a>
+                    )}
                   </div>
                   <div className="flex items-center gap-4 sm:flex-col sm:items-end sm:gap-2">
                     <span className="inline-flex items-center gap-1.5 whitespace-nowrap text-sm font-medium tabular-nums text-charcoal">

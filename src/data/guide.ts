@@ -23,6 +23,7 @@ export interface GuidePlace {
   lng: number;
   placeId: string;
   note: Text;
+  phone?: string;
   /** Si se indica, el lugar solo se muestra para estos edificios. */
   only?: string[];
 }
@@ -315,6 +316,7 @@ export const guidePlaces: GuidePlace[] = [
   {
     name: 'AmeriRent Santiago',
     category: 'cars',
+    phone: '+1 809-626-8684',
     lat: 19.4592731,
     lng: -70.6948348,
     placeId: 'ChIJCaQy1H3FsY4REgl44g7wcgI',
@@ -326,6 +328,7 @@ export const guidePlaces: GuidePlace[] = [
   {
     name: 'Alamo – Santiago Center',
     category: 'cars',
+    phone: '+1 809-562-1444',
     lat: 19.457049,
     lng: -70.685775,
     placeId: 'ChIJx6xtDcLFsY4Ra1pMn5s7scg',
@@ -337,6 +340,7 @@ export const guidePlaces: GuidePlace[] = [
   {
     name: 'Rosario R Rent Car',
     category: 'cars',
+    phone: '+1 829-212-5643',
     lat: 19.3873407,
     lng: -70.6070506,
     placeId: 'ChIJg4kRbW_FsY4RW5VBNzBbIxU',
@@ -348,6 +352,7 @@ export const guidePlaces: GuidePlace[] = [
   {
     name: 'Sabaneta Rent Car',
     category: 'cars',
+    phone: '+1 829-424-9229',
     lat: 19.4005814,
     lng: -70.6000772,
     placeId: 'ChIJCdqQMjXQsY4R8xXFM_lF8bA',
@@ -359,6 +364,7 @@ export const guidePlaces: GuidePlace[] = [
   {
     name: 'Alamo, Enterprise y National – Aeropuerto',
     category: 'cars',
+    phone: '+1 809-233-8163',
     lat: 19.4021957,
     lng: -70.6027661,
     placeId: 'ChIJz3C3PjHPsY4RknbyxFyvFcU',
@@ -370,12 +376,206 @@ export const guidePlaces: GuidePlace[] = [
   {
     name: 'Hertz – Aeropuerto',
     category: 'cars',
+    phone: '+1 809-233-8555',
     lat: 19.402158,
     lng: -70.602033,
     placeId: 'ChIJpQu7wTTQsY4RNKqd_5n2Hsk',
     note: {
       es: 'En el aeropuerto del Cibao, todos los días de 7:00 a. m. a 10:00 p. m.',
       en: 'At Cibao airport, every day from 7:00 a.m. to 10:00 p.m.',
+    },
+  },
+
+  {
+    name: 'SJ Rent a Car',
+    category: 'cars',
+    lat: 19.3908158,
+    lng: -70.6073712,
+    placeId: 'ChIJQav9Q-bRsY4ROtiWq2JaV4E',
+    phone: '+1 809-612-6097',
+    note: {
+      es: 'Junto al aeropuerto, abierta 24 horas. Ofrece sillas para niños.',
+      en: 'Next to the airport, open 24 hours. Child seats available.',
+    },
+  },
+  {
+    name: 'Nene Rent a Car',
+    category: 'cars',
+    lat: 19.3887653,
+    lng: -70.6068727,
+    placeId: 'ChIJqcPLd8XRsY4RL_fjqSUCUs0',
+    phone: '+1 829-983-6382',
+    note: {
+      es: 'Junto al aeropuerto, abierta 24 horas. Te recoge en el aeropuerto.',
+      en: 'Next to the airport, open 24 hours. Airport pick-up.',
+    },
+  },
+  {
+    name: 'Domi Rent Car',
+    category: 'cars',
+    lat: 19.3966063,
+    lng: -70.603438,
+    placeId: 'ChIJ3RI82CrFsY4Rn0Sud2JpajQ',
+    phone: '+1 829-975-0216',
+    note: {
+      es: 'Junto al aeropuerto, abierta 24 horas. Entrega y recoge el carro en todo el país.',
+      en: 'Next to the airport, open 24 hours. Delivers and collects cars nationwide.',
+    },
+  },
+  {
+    name: 'BS Rent Car',
+    category: 'cars',
+    lat: 19.3890979,
+    lng: -70.6074012,
+    placeId: 'ChIJk1jaIwDRsY4RxaUrQDuJwgI',
+    phone: '+1 829-658-5848',
+    note: {
+      es: 'Junto al aeropuerto, abierta 24 horas. Te recoge en el aeropuerto.',
+      en: 'Next to the airport, open 24 hours. Airport pick-up.',
+    },
+  },
+  {
+    name: 'Gold Rent Car',
+    category: 'cars',
+    lat: 19.3889119,
+    lng: -70.6068322,
+    placeId: 'ChIJnwq6dsvRsY4RWSM6hWqArSk',
+    phone: '+1 809-512-5508',
+    note: {
+      es: 'Junto al aeropuerto, abierta 24 horas. Te recoge en el aeropuerto.',
+      en: 'Next to the airport, open 24 hours. Airport pick-up.',
+    },
+  },
+  {
+    name: 'WT Rent a Car',
+    category: 'cars',
+    lat: 19.3943943,
+    lng: -70.6046972,
+    placeId: 'ChIJf5eAEqvRsY4RzKqFslhIOUQ',
+    phone: '+1 829-640-6475',
+    note: {
+      es: 'Frente al aeropuerto, abierta 24 horas. Opción para alquileres largos.',
+      en: 'Across from the airport, open 24 hours. Good for long rentals.',
+    },
+  },
+  {
+    name: 'Dominguez Elena Rent Car',
+    category: 'cars',
+    lat: 19.3989717,
+    lng: -70.6030795,
+    placeId: 'ChIJzxc3dQ7RsY4RV9YBZiQTlRk',
+    phone: '+1 829-310-2959',
+    note: {
+      es: 'Junto al aeropuerto, abierta 24 horas. Entrega en todo el país.',
+      en: 'Next to the airport, open 24 hours. Nationwide delivery.',
+    },
+  },
+  {
+    name: 'Jeffry Rent a Car',
+    category: 'cars',
+    lat: 19.3946087,
+    lng: -70.6046062,
+    placeId: 'ChIJezM-BLlQRkgRpLQFWiMwtvA',
+    phone: '+1 829-349-8279',
+    note: {
+      es: 'Junto al aeropuerto del Cibao, abierta 24 horas.',
+      en: 'Next to Cibao airport, open 24 hours.',
+    },
+  },
+  {
+    name: 'Drive Rent Car',
+    category: 'cars',
+    lat: 19.399444,
+    lng: -70.6028595,
+    placeId: 'ChIJ55n2QsvRsY4RTuFbs3_yWiI',
+    phone: '+1 829-423-2213',
+    note: {
+      es: 'Junto al aeropuerto, abierta 24 horas. Te recoge en el aeropuerto.',
+      en: 'Next to the airport, open 24 hours. Airport pick-up.',
+    },
+  },
+  {
+    name: 'Elegance Rent a Car',
+    category: 'cars',
+    lat: 19.4000083,
+    lng: -70.6026828,
+    placeId: 'ChIJB9UWRMvRsY4Ru7MDHxL3Q4M',
+    phone: '+1 809-969-7529',
+    note: {
+      es: 'La primera agencia al salir del aeropuerto, abierta 24 horas.',
+      en: 'The first agency as you leave the airport, open 24 hours.',
+    },
+  },
+  {
+    name: 'Premium Rent Car',
+    category: 'cars',
+    lat: 19.3942951,
+    lng: -70.6048513,
+    placeId: 'ChIJF8oLCMXRsY4RsGb6t4Wco7g',
+    phone: '+1 829-866-4639',
+    note: {
+      es: 'Junto al aeropuerto, abierta 24 horas. Te recoge en el aeropuerto.',
+      en: 'Next to the airport, open 24 hours. Airport pick-up.',
+    },
+  },
+  {
+    name: 'M y M Rent Car',
+    category: 'cars',
+    lat: 19.396268,
+    lng: -70.6038951,
+    placeId: 'ChIJh_HQe9_RsY4RusIFhcb7sYw',
+    phone: '+1 829-372-6479',
+    note: {
+      es: 'Junto al aeropuerto, abierta 24 horas. Te recoge en el aeropuerto.',
+      en: 'Next to the airport, open 24 hours. Airport pick-up.',
+    },
+  },
+  {
+    name: 'RJ Rent a Car',
+    category: 'cars',
+    lat: 19.3908161,
+    lng: -70.6073575,
+    placeId: 'ChIJz3jQSDTRsY4Ruq-tb4QETFA',
+    phone: '+1 829-828-1153',
+    note: {
+      es: 'Junto al aeropuerto, abierta 24 horas. Te recoge en el aeropuerto.',
+      en: 'Next to the airport, open 24 hours. Airport pick-up.',
+    },
+  },
+  {
+    name: 'Rocelfa Rent a Car',
+    category: 'cars',
+    lat: 19.3985917,
+    lng: -70.602506,
+    placeId: 'ChIJW_bIc8vRsY4RGej1JDHG814',
+    phone: '+1 809-612-3007',
+    note: {
+      es: 'Junto al aeropuerto del Cibao, abierta 24 horas.',
+      en: 'Next to Cibao airport, open 24 hours.',
+    },
+  },
+  {
+    name: 'ALL Car Rental',
+    category: 'cars',
+    lat: 19.3918037,
+    lng: -70.6056595,
+    placeId: 'ChIJpUAcF8_RsY4Rl9jYS8LuhMM',
+    phone: '+1 809-446-0828',
+    note: {
+      es: 'Junto al aeropuerto, abierta 24 horas. Especialistas en jeepetas.',
+      en: 'Next to the airport, open 24 hours. SUV specialists.',
+    },
+  },
+  {
+    name: 'Temptation Rent Car',
+    category: 'cars',
+    lat: 19.4080847,
+    lng: -70.5914555,
+    placeId: 'ChIJkWtq1k7QsY4RdXdaWMrjS0E',
+    phone: '+1 809-401-8437',
+    note: {
+      es: 'En la Carretera Mella, cerca del aeropuerto. Abierta 24 horas.',
+      en: 'On Carretera Mella, near the airport. Open 24 hours.',
     },
   },
 
