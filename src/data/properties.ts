@@ -15,6 +15,8 @@ export interface PropertyRecord {
   bedrooms?: number;
   beds?: number;
   bathrooms?: number;
+  /** true si el anuncio de Airbnb está desactivado: la tarjeta lleva a WhatsApp. */
+  unlisted?: boolean;
 }
 
 /**
@@ -161,6 +163,20 @@ export const properties: PropertyRecord[] = [
   },
   {
     id: 'LEEV-12',
+    airbnbId: '1131828491006453848',
+    title: 'Vista de Santiago | Barletta A10',
+    location: 'Torre Barletta, Santiago',
+    guests: 4,
+    bedrooms: 2,
+    beds: 2,
+    bathrooms: 2.5,
+    image: '/Captura_de_pantalla_2026-10-27_a_la(s)_11.40.27_a.m..png',
+    imageAlt: { es: 'Sala de Barletta A10 en Santiago', en: 'Living room at Barletta A10 in Santiago' },
+    airbnbUrl: 'https://www.airbnb.com/rooms/1131828491006453848',
+    unlisted: true,
+  },
+  {
+    id: 'LEEV-13',
     airbnbId: '792636543021249639',
     title: 'Suite Especial 01 | Villas Sixteen',
     location: 'Villas Sixteen, Moca',
@@ -172,7 +188,7 @@ export const properties: PropertyRecord[] = [
     airbnbUrl: 'https://www.airbnb.com/rooms/792636543021249639',
   },
   {
-    id: 'LEEV-13',
+    id: 'LEEV-14',
     airbnbId: '1015810667406770695',
     title: 'Suite Especial 02 | Villas Sixteen',
     location: 'Villas Sixteen, Moca',
@@ -184,7 +200,7 @@ export const properties: PropertyRecord[] = [
     airbnbUrl: 'https://www.airbnb.com/rooms/1015810667406770695',
   },
   {
-    id: 'LEEV-14',
+    id: 'LEEV-15',
     airbnbId: '1086948751039018652',
     title: 'Suite Superior 03 | Villas Sixteen',
     location: 'Villas Sixteen, Moca',
@@ -196,7 +212,7 @@ export const properties: PropertyRecord[] = [
     airbnbUrl: 'https://www.airbnb.com/rooms/1086948751039018652',
   },
   {
-    id: 'LEEV-15',
+    id: 'LEEV-16',
     airbnbId: '1087594010023957905',
     title: 'Suite Superior 04 | Villas Sixteen',
     location: 'Villas Sixteen, Moca',
@@ -208,7 +224,7 @@ export const properties: PropertyRecord[] = [
     airbnbUrl: 'https://www.airbnb.com/rooms/1087594010023957905',
   },
   {
-    id: 'LEEV-16',
+    id: 'LEEV-17',
     airbnbId: '1429711843610828548',
     title: 'Villa Santorini',
     location: 'La Romana',

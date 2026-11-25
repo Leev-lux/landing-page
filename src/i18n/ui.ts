@@ -114,6 +114,7 @@ export const ui = {
       es: 'Explora nuestra selección de apartamentos y villas amueblados en Santiago, Moca y La Romana, y encuentra un espacio que se adapte a tu viaje.',
       en: 'Explore our selection of furnished apartments and villas in Santiago, Moca and La Romana, and choose a space that fits your trip.',
     },
+    askWhatsapp: { es: 'Consultar disponibilidad por WhatsApp', en: 'Ask about availability on WhatsApp' },
     viewOnAirbnb: { es: 'Ver propiedad en Airbnb', en: 'View property on Airbnb' },
     guests: { es: 'huéspedes', en: 'guests' },
     bedrooms: { es: 'hab.', en: 'bedrooms' },

@@ -1,6 +1,6 @@
-import { BedDouble, Bath, Users, DoorOpen, Sofa, ArrowUpRight } from 'lucide-react';
+import { BedDouble, Bath, Users, DoorOpen, Sofa, ArrowUpRight, MessageCircle } from 'lucide-react';
 import { useLang, ui } from '../context/LanguageContext';
-import type { PropertyRecord } from '../data/properties';
+import { whatsappPrefilled, type PropertyRecord } from '../data/properties';
 import { ImagePlaceholder } from './ImagePlaceholder';
 
 interface PropertyCardProps {
@@ -92,18 +92,30 @@ export function PropertyCard({ property, lang }: PropertyCardProps) {
         )}
 
         <div className="mt-auto pt-6">
-          <a
-            href={property.airbnbUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-outline group/cta w-full !px-5 !py-3 text-[13px]"
-          >
-            {t(ui.properties.viewOnAirbnb)}
-            <ArrowUpRight
-              size={15}
-              className="transition-transform group-hover/cta:translate-x-0.5 group-hover/cta:-translate-y-0.5"
-            />
-          </a>
+          {property.unlisted ? (
+            <a
+              href={whatsappPrefilled}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline group/cta w-full !px-5 !py-3 text-[13px]"
+            >
+              <MessageCircle size={15} />
+              {t(ui.properties.askWhatsapp)}
+            </a>
+          ) : (
+            <a
+              href={property.airbnbUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline group/cta w-full !px-5 !py-3 text-[13px]"
+            >
+              {t(ui.properties.viewOnAirbnb)}
+              <ArrowUpRight
+                size={15}
+                className="transition-transform group-hover/cta:translate-x-0.5 group-hover/cta:-translate-y-0.5"
+              />
+            </a>
+          )}
         </div>
       </div>
     </article>
