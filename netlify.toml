@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Las páginas legales (/privacy-policy, /terms-and-conditions) las maneja la app
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
