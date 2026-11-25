@@ -32,10 +32,11 @@ export const guideBuildings: GuideBuilding[] = [
   { id: 'soha-2', name: 'Soha Suites II', lat: 19.4547923, lng: -70.6840784 },
   { id: 'soha-panorama', name: 'Soha Panorama', lat: 19.4594199, lng: -70.6906562 },
   { id: 'trinitaria', name: 'TH Trinitaria', lat: 19.4549332, lng: -70.6892935 },
+  { id: 'barletta', name: 'Torre Barletta', lat: 19.4484904, lng: -70.6870296 },
   { id: '8-brothers', name: '8 Brothers Tower', lat: 19.3844517, lng: -70.6097652 },
 ];
 
-const CENTRAL = ['soha-1', 'soha-2', 'soha-panorama', 'trinitaria'];
+const CENTRAL = ['soha-1', 'soha-2', 'soha-panorama', 'trinitaria', 'barletta'];
 const AIRPORT = ['8-brothers'];
 
 export const guideCategories: { id: GuideCategory; label: Text }[] = [
