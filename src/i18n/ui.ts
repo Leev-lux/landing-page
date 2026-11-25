@@ -99,8 +99,8 @@ export const ui = {
     eyebrow: { es: 'Propiedades', en: 'Properties' },
     title: { es: 'Encuentra tu estadía', en: 'Find Your Stay' },
     intro: {
-      es: 'Explora nuestra selección de apartamentos amueblados en Santiago y encuentra un espacio que se adapte a tu viaje.',
-      en: 'Explore our selection of furnished apartments in Santiago and choose a space that fits your trip.',
+      es: 'Explora nuestra selección de apartamentos y villas amueblados en Santiago, Moca y La Romana, y encuentra un espacio que se adapte a tu viaje.',
+      en: 'Explore our selection of furnished apartments and villas in Santiago, Moca and La Romana, and choose a space that fits your trip.',
     },
     viewOnAirbnb: { es: 'Ver propiedad en Airbnb', en: 'View property on Airbnb' },
     guests: { es: 'huéspedes', en: 'guests' },
@@ -157,7 +157,7 @@ export const ui = {
   finalCta: {
     title: { es: 'Tu próxima estadía empieza aquí.', en: 'Your Next Stay Starts Here.' },
     text: {
-      es: 'Explora nuestros apartamentos amueblados en Santiago y encuentra un espacio que se adapte a tu viaje.',
+      es: 'Explora nuestros apartamentos y villas amueblados en Santiago, Moca y La Romana, y encuentra un espacio que se adapte a tu viaje.',
       en: 'Explore our furnished apartments in Santiago and find a space that suits your trip.',
     },
     primary: { es: 'Explorar propiedades', en: 'Explore Properties' },
