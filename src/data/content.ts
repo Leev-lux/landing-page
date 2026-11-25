@@ -23,8 +23,8 @@ export const services: ServiceItem[] = [
     ctaLabel: { es: 'Explorar propiedades', en: 'Explore Properties' },
     ctaHref: '#propiedades',
     ctaType: 'anchor',
-    image: '/Captura_de_pantalla_2026-10-27_a_la(s)_10.28.15_a.m..png',
-    imageAlt: { es: 'Escapada corta en Leev', en: 'Short-term stay at Leev' },
+    image: '/servicios/escapadas.jpg',
+    imageAlt: { es: 'Balcón con vista a la montaña y mesa para dos', en: 'Balcony with mountain view and a table for two' },
   },
   {
     id: 'long-term',
@@ -36,8 +36,8 @@ export const services: ServiceItem[] = [
     ctaLabel: { es: 'Consultar estadías largas', en: 'Ask About Long Stays' },
     ctaHref: 'whatsapp',
     ctaType: 'whatsapp',
-    image: '/Captura_de_pantalla_2026-10-27_a_la(s)_10.28.56_a.m..png',
-    imageAlt: { es: 'Estadía larga en Leev', en: 'Long-term stay at Leev' },
+    image: '/servicios/estadias-largas.jpg',
+    imageAlt: { es: 'Cocina equipada y comedor', en: 'Fully equipped kitchen and dining area' },
   },
   {
     id: 'assistance',
@@ -49,8 +49,8 @@ export const services: ServiceItem[] = [
     ctaLabel: { es: 'Contactar', en: 'Contact Us' },
     ctaHref: 'whatsapp',
     ctaType: 'whatsapp',
-    image: '/Captura_de_pantalla_2026-10-27_a_la(s)_10.29.10_a.m..png',
-    imageAlt: { es: 'Atención personalizada Leev', en: 'Personalized assistance at Leev' },
+    image: '/servicios/atencion.jpg',
+    imageAlt: { es: 'Entrada iluminada del edificio', en: 'Lit building entrance' },
   },
   {
     id: 'different-needs',
@@ -62,8 +62,8 @@ export const services: ServiceItem[] = [
     ctaLabel: { es: 'Encuentra tu estadía', en: 'Find Your Stay' },
     ctaHref: '#propiedades',
     ctaType: 'anchor',
-    image: '/Captura_de_pantalla_2026-10-27_a_la(s)_10.30.10_a.m..png',
-    imageAlt: { es: 'Espacios para cada tipo de viaje', en: 'Spaces for every type of trip' },
+    image: '/servicios/cada-viaje.jpg',
+    imageAlt: { es: 'Sala amplia y comedor para grupos y familias', en: 'Spacious living and dining room for groups and families' },
   },
   {
     id: 'cleanliness',
@@ -75,8 +75,8 @@ export const services: ServiceItem[] = [
     ctaLabel: { es: '', en: '' },
     ctaHref: '',
     ctaType: 'anchor',
-    image: '/Captura_de_pantalla_2026-10-27_a_la(s)_10.30.22_a.m..png',
-    imageAlt: { es: 'Espacios impecables en Leev', en: 'Impeccable spaces at Leev' },
+    image: '/servicios/limpieza.jpg',
+    imageAlt: { es: 'Cama preparada con toallas limpias', en: 'Freshly made bed with clean towels' },
   },
 ];
 
