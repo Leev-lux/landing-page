@@ -79,6 +79,18 @@ export const ui = {
     },
   },
 
+  tours: {
+    eyebrow: { es: 'Recorridos 3D', en: '3D Tours' },
+    title: {
+      es: 'Recorre el apartamento antes de llegar.',
+      en: 'Walk through the apartment before you arrive.',
+    },
+    intro: {
+      es: 'Muévete por cada espacio como si estuvieras ahí. Elige un apartamento y empieza el recorrido.',
+      en: 'Move through every room as if you were there. Choose an apartment and start the tour.',
+    },
+    start: { es: 'Iniciar recorrido 3D', en: 'Start 3D tour' },
+  },
   stayFinder: {
     eyebrow: { es: 'Buscador', en: 'Stay Finder' },
     title: {

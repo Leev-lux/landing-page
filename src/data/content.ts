@@ -181,3 +181,16 @@ export const galleryImages: GalleryItem[] = [
   { src: '/image.png', alt: { es: 'Comedor y cocina', en: 'Dining area and kitchen' } },
   { src: '/Captura_de_pantalla_2026-10-27_a_la(s)_10.28.15_a.m..png', alt: { es: 'Sala con acentos de color', en: 'Living room with color accents' } },
 ];
+
+/**
+ * Recorridos 3D de Matterport.
+ * Para agregar uno: copia el airbnbId del apartamento (src/data/properties.ts)
+ * y pega el enlace de Matterport tal cual (https://my.matterport.com/show/?m=...).
+ * Mientras esta lista esté vacía, la sección no aparece en la página.
+ */
+export interface TourItem {
+  airbnbId: string;
+  matterport: string;
+}
+
+export const tours: TourItem[] = [];

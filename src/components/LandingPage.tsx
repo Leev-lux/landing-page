@@ -1,7 +1,7 @@
 import { Header } from './Header';
 import { Hero } from './Hero';
 import { Communities } from './Communities';
-import { StayFinder } from './StayFinder';
+import { VirtualTours } from './VirtualTours';
 import { Properties } from './Properties';
 import { Services } from './Services';
 import { LeevStandard } from './LeevStandard';
@@ -18,7 +18,7 @@ export function LandingPage() {
       <main>
         <Hero />
         <Communities />
-        <StayFinder />
+        <VirtualTours />
         <Properties />
         <Services />
         <LeevStandard />
