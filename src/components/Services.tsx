@@ -17,7 +17,9 @@ export function Services() {
         </h2>
 
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
-          {services.map((service) => {
+          {services.map((service, idx) => {
+            // An odd last card spans the full row, with a tall photo beside the text.
+            const isWide = services.length % 2 === 1 && idx === services.length - 1;
             const ctaHref =
               service.ctaType === 'whatsapp' ? whatsappPrefilled : service.ctaHref;
             const isExternal = service.ctaType === 'whatsapp';
@@ -25,15 +27,19 @@ export function Services() {
             return (
               <article
                 key={service.id}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-charcoal/8 bg-cream/40 transition-all duration-300 hover:border-gold/40 hover:shadow-[0_18px_40px_-22px_rgba(30,30,30,0.22)]"
+                className={`group flex flex-col overflow-hidden rounded-2xl border border-charcoal/8 bg-cream/40 transition-all duration-300 hover:border-gold/40 hover:shadow-[0_18px_40px_-22px_rgba(30,30,30,0.22)] ${
+                  isWide ? 'md:col-span-2 md:flex-row' : ''
+                }`}
               >
-                <div className="relative overflow-hidden">
+                <div className={`relative overflow-hidden ${isWide ? 'md:w-2/5 md:shrink-0' : ''}`}>
                   {service.image ? (
                     <img
                       src={service.image}
                       alt={service.imageAlt ? t(service.imageAlt) : t(service.tagline)}
                       loading="lazy"
-                      className="aspect-[16/9] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      className={`w-full object-cover transition-transform duration-500 group-hover:scale-105 ${
+                        isWide ? 'aspect-[4/5] md:aspect-[3/4] md:h-full' : 'aspect-[16/9]'
+                      }`}
                     />
                   ) : (
                     <ImagePlaceholder
@@ -43,11 +49,15 @@ export function Services() {
                   )}
                 </div>
 
-                <div className="flex flex-1 flex-col p-6 sm:p-7">
-                  <h3 className="text-[22px] font-medium leading-snug text-charcoal sm:text-2xl">
+                <div
+                  className={`flex flex-1 flex-col p-6 sm:p-7 ${
+                    isWide ? 'md:justify-center md:p-10 lg:p-14' : ''
+                  }`}
+                >
+                  <h3 className={`text-[22px] font-medium leading-snug text-charcoal sm:text-2xl ${isWide ? 'lg:text-[32px]' : ''}`}>
                     {t(service.tagline)}
                   </h3>
-                  <p className="mt-3 text-base leading-relaxed text-charcoal/70">
+                  <p className={`mt-3 text-base leading-relaxed text-charcoal/70 ${isWide ? 'max-w-md lg:text-lg' : ''}`}>
                     {t(service.description)}
                   </p>
 
