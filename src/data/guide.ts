@@ -14,7 +14,7 @@ export interface GuideBuilding {
   lng: number;
 }
 
-export type GuideCategory = 'see' | 'eat' | 'groceries' | 'pharmacy' | 'essentials';
+export type GuideCategory = 'see' | 'eat' | 'groceries' | 'pharmacy' | 'cars' | 'essentials';
 
 export interface GuidePlace {
   name: string;
@@ -44,6 +44,7 @@ export const guideCategories: { id: GuideCategory; label: Text }[] = [
   { id: 'eat', label: { es: 'Dónde comer', en: 'Where to eat' } },
   { id: 'groceries', label: { es: 'Supermercados', en: 'Groceries' } },
   { id: 'pharmacy', label: { es: 'Farmacias', en: 'Pharmacies' } },
+  { id: 'cars', label: { es: 'Rent a car', en: 'Car rental' } },
   { id: 'essentials', label: { es: 'Esenciales', en: 'Essentials' } },
 ];
 
@@ -308,6 +309,74 @@ export const guidePlaces: GuidePlace[] = [
       en: 'Open every day until 10:00 p.m.',
     },
     only: AIRPORT,
+  },
+
+  // Rent a car
+  {
+    name: 'AmeriRent Santiago',
+    category: 'cars',
+    lat: 19.4592731,
+    lng: -70.6948348,
+    placeId: 'ChIJCaQy1H3FsY4REgl44g7wcgI',
+    note: {
+      es: 'En la Av. 27 de Febrero, muy bien valorado. Lunes a viernes 8:00 a. m.–5:00 p. m.; sábado hasta el mediodía.',
+      en: 'On Av. 27 de Febrero, highly rated. Mon–Fri 8:00 a.m.–5:00 p.m.; Saturday until noon.',
+    },
+  },
+  {
+    name: 'Alamo – Santiago Center',
+    category: 'cars',
+    lat: 19.457049,
+    lng: -70.685775,
+    placeId: 'ChIJx6xtDcLFsY4Ra1pMn5s7scg',
+    note: {
+      es: 'Dentro del Ágora Mall. Lunes a viernes 8:00 a. m.–5:00 p. m.; sábado hasta la 1:00 p. m.',
+      en: 'Inside Ágora Mall. Mon–Fri 8:00 a.m.–5:00 p.m.; Saturday until 1:00 p.m.',
+    },
+  },
+  {
+    name: 'Rosario R Rent Car',
+    category: 'cars',
+    lat: 19.3873407,
+    lng: -70.6070506,
+    placeId: 'ChIJg4kRbW_FsY4RW5VBNzBbIxU',
+    note: {
+      es: 'Empresa local muy bien valorada, abierta 24 horas. Te recoge y te lleva al aeropuerto.',
+      en: 'Highly rated local company, open 24 hours. Airport pick-up and drop-off.',
+    },
+  },
+  {
+    name: 'Sabaneta Rent Car',
+    category: 'cars',
+    lat: 19.4005814,
+    lng: -70.6000772,
+    placeId: 'ChIJCdqQMjXQsY4R8xXFM_lF8bA',
+    note: {
+      es: 'Frente al aeropuerto, abierta 24 horas. Reservas por WhatsApp.',
+      en: 'Across from the airport, open 24 hours. Bookings via WhatsApp.',
+    },
+  },
+  {
+    name: 'Alamo, Enterprise y National – Aeropuerto',
+    category: 'cars',
+    lat: 19.4021957,
+    lng: -70.6027661,
+    placeId: 'ChIJz3C3PjHPsY4RknbyxFyvFcU',
+    note: {
+      es: 'Mostradores dentro del aeropuerto del Cibao, abiertos 24 horas.',
+      en: 'Counters inside Cibao airport, open 24 hours.',
+    },
+  },
+  {
+    name: 'Hertz – Aeropuerto',
+    category: 'cars',
+    lat: 19.402158,
+    lng: -70.602033,
+    placeId: 'ChIJpQu7wTTQsY4RNKqd_5n2Hsk',
+    note: {
+      es: 'En el aeropuerto del Cibao, todos los días de 7:00 a. m. a 10:00 p. m.',
+      en: 'At Cibao airport, every day from 7:00 a.m. to 10:00 p.m.',
+    },
   },
 
   // Esenciales
