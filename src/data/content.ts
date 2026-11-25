@@ -23,8 +23,8 @@ export const services: ServiceItem[] = [
     ctaLabel: { es: 'Explorar propiedades', en: 'Explore Properties' },
     ctaHref: '#propiedades',
     ctaType: 'anchor',
-    image: '/servicios/escapadas.jpg',
-    imageAlt: { es: 'Balcón con vista a la montaña y mesa para dos', en: 'Balcony with mountain view and a table for two' },
+    image: 'https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM1MTQ4Njg1ODE2MDExMzI2MQ==/original/9bc7ac56-a398-43c7-a201-ff72688efe16.png?im_w=1200',
+    imageAlt: { es: 'Piscina en la azotea con vista a Santiago', en: 'Rooftop pool overlooking Santiago' },
   },
   {
     id: 'long-term',
@@ -36,8 +36,8 @@ export const services: ServiceItem[] = [
     ctaLabel: { es: 'Consultar estadías largas', en: 'Ask About Long Stays' },
     ctaHref: 'whatsapp',
     ctaType: 'whatsapp',
-    image: '/servicios/estadias-largas.jpg',
-    imageAlt: { es: 'Cocina equipada y comedor', en: 'Fully equipped kitchen and dining area' },
+    image: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1766902402599087141/original/438bef48-6eb1-41d4-ade8-3e164099b5dd.jpeg?im_w=1200',
+    imageAlt: { es: 'Cocina equipada con isla', en: 'Fully equipped kitchen with island' },
   },
   {
     id: 'assistance',
@@ -49,8 +49,8 @@ export const services: ServiceItem[] = [
     ctaLabel: { es: 'Contactar', en: 'Contact Us' },
     ctaHref: 'whatsapp',
     ctaType: 'whatsapp',
-    image: '/servicios/atencion.jpg',
-    imageAlt: { es: 'Entrada iluminada del edificio', en: 'Lit building entrance' },
+    image: 'https://a0.muscache.com/im/pictures/miso/Hosting-545498928051919866/original/1f7b238e-dde1-4449-a910-2f0a3b515253.jpeg?im_w=1200',
+    imageAlt: { es: 'Lobby con recepción', en: 'Lobby with reception desk' },
   },
   {
     id: 'different-needs',
@@ -62,8 +62,8 @@ export const services: ServiceItem[] = [
     ctaLabel: { es: 'Encuentra tu estadía', en: 'Find Your Stay' },
     ctaHref: '#propiedades',
     ctaType: 'anchor',
-    image: '/servicios/cada-viaje.jpg',
-    imageAlt: { es: 'Sala amplia y comedor para grupos y familias', en: 'Spacious living and dining room for groups and families' },
+    image: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1766902402599087141/original/0f92a239-642a-425e-a925-109cf0671311.jpeg?im_w=1200',
+    imageAlt: { es: 'Sala y comedor amplios', en: 'Spacious living and dining area' },
   },
   {
     id: 'cleanliness',
