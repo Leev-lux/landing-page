@@ -7,8 +7,37 @@ export const ui = {
     en: 'Luxury stays in Santiago, D.R.',
   },
 
+  meta: {
+    homeTitle: { es: 'Apartamentos amueblados en Santiago', en: 'Furnished Apartments in Santiago' },
+  },
+  teasers: {
+    eyebrow: { es: 'Explora Leev', en: 'Explore Leev' },
+    title: { es: 'Todo lo que necesitas para tu estadía', en: 'Everything you need for your stay' },
+    stays: {
+      es: 'Apartamentos y villas en Santiago, Moca y La Romana.',
+      en: 'Apartments and villas in Santiago, Moca and La Romana.',
+    },
+    services: {
+      es: 'Escapadas, estadías largas y atención personalizada.',
+      en: 'Getaways, long stays and personal attention.',
+    },
+    guide: {
+      es: 'Qué ver, dónde comer y rent a car cerca de tu edificio.',
+      en: 'What to see, where to eat and car rentals near your building.',
+    },
+    gallery: {
+      es: 'Mira los espacios antes de llegar.',
+      en: 'See the spaces before you arrive.',
+    },
+    faqLead: { es: '¿Tienes dudas sobre reservas, llegada o pagos?', en: 'Questions about bookings, check-in or payments?' },
+    faqLink: { es: 'Ver preguntas frecuentes', en: 'See the FAQ' },
+  },
   nav: {
     stays: { es: 'Estadías', en: 'Stays' },
+    home: { es: 'Inicio', en: 'Home' },
+    services: { es: 'Servicios', en: 'Services' },
+    gallery: { es: 'Galería', en: 'Gallery' },
+    faq: { es: 'Preguntas', en: 'FAQ' },
     about: { es: 'Sobre Leev', en: 'About Leev' },
     guide: { es: 'Guía de Santiago', en: 'Santiago Guide' },
     communities: { es: 'Comunidades', en: 'Communities' },
