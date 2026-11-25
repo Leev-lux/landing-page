@@ -246,3 +246,6 @@ export const phoneSecondary = '849-357-5827';
 
 export const instagramUrl = 'https://www.instagram.com/leev.do/';
 export const airbnbHostUrl = 'https://es-l.airbnb.com/users/show/438497780';
+
+export const whatsappOwners =
+  'https://wa.me/18492148400?text=Hola%20Leev%2C%20tengo%20un%20apartamento%20y%20quisiera%20informaci%C3%B3n%20sobre%20la%20administraci%C3%B3n%20de%20mi%20propiedad.';

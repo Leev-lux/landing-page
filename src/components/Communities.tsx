@@ -1,78 +1,94 @@
-import { ArrowRight, BriefcaseBusiness, Building2, Home, UsersRound, Waves } from 'lucide-react';
+import { ArrowRight, BriefcaseBusiness, Check, Home, KeyRound, MessageCircle, Sun } from 'lucide-react';
 import { useLang, ui } from '../context/LanguageContext';
-import { whatsappPrefilled } from '../data/properties';
-import { scrollToSection } from '../utils/scroll';
+import { whatsappOwners } from '../data/properties';
 
-const communityItems = [
-  { key: 'executive', icon: BriefcaseBusiness, action: 'properties' },
-  { key: 'tenants', icon: Building2, action: 'contact' },
-  { key: 'families', icon: Home, action: 'properties' },
-  { key: 'owners', icon: UsersRound, action: 'contact' },
-  { key: 'hosts', icon: Waves, action: 'contact' },
+const guestItems = [
+  { key: 'executive', icon: BriefcaseBusiness },
+  { key: 'families', icon: Home },
+  { key: 'tenants', icon: KeyRound },
+  { key: 'getaways', icon: Sun },
 ] as const;
-
-type CommunityKey = (typeof communityItems)[number]['key'];
 
 export function Communities() {
   const { t } = useLang();
-
-  const content = (key: CommunityKey) => ui.communities[key];
-
-  const handleProperties = () => scrollToSection('propiedades');
+  const c = ui.communities;
 
   return (
     <section id="comunidades" className="scroll-mt-20 bg-warm-white py-20 lg:py-28">
       <div className="container-leev">
-        <p className="section-eyebrow text-center">{t(ui.communities.eyebrow)}</p>
+        <p className="section-eyebrow text-center">{t(c.eyebrow)}</p>
         <h2 className="mx-auto max-w-3xl text-center text-[28px] font-medium leading-tight text-charcoal sm:text-[34px] lg:text-[40px]">
-          {t(ui.communities.title)}
+          {t(c.title)}
         </h2>
         <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-relaxed text-charcoal/70">
-          {t(ui.communities.intro)}
+          {t(c.intro)}
         </p>
 
-        <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5 lg:gap-5">
-          {communityItems.map(({ key, icon: Icon, action }) => {
-            const item = content(key);
-            const isProperties = action === 'properties';
+        <div className="mt-12 grid gap-5 lg:grid-cols-[1.35fr_1fr] lg:gap-6">
+          {/* Guests & tenants */}
+          <article className="flex flex-col rounded-3xl border border-charcoal/10 bg-cream/60 p-6 sm:p-8 lg:p-10">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold-dark">
+              {t(c.guests.label)}
+            </p>
+            <h3 className="mt-3 text-[26px] font-medium leading-tight text-charcoal sm:text-[30px]">
+              {t(c.guests.title)}
+            </h3>
 
-            return (
-              <article
-                key={key}
-                className="group flex flex-col rounded-2xl border border-charcoal/10 bg-cream/55 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-gold/50 hover:shadow-[0_18px_38px_-22px_rgba(30,30,30,0.24)] sm:p-6"
+            <ul className="mt-8 grid gap-6 sm:grid-cols-2">
+              {guestItems.map(({ key, icon: Icon }) => (
+                <li key={key} className="flex gap-4">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold/50 bg-warm-white text-gold-dark">
+                    <Icon size={20} strokeWidth={1.6} aria-hidden="true" />
+                  </span>
+                  <div className="min-w-0">
+                    <p className="text-lg font-medium text-charcoal font-display">{t(c[key].title)}</p>
+                    <p className="mt-1 text-sm leading-relaxed text-charcoal/70">
+                      {t(c[key].description)}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-auto pt-8">
+              <a href="/estadias" className="btn-primary group">
+                {t(c.guests.cta)}
+                <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
+              </a>
+            </div>
+          </article>
+
+          {/* Property owners */}
+          <article className="flex flex-col rounded-3xl bg-charcoal p-6 text-warm-white sm:p-8 lg:p-10">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold">
+              {t(c.owners.label)}
+            </p>
+            <h3 className="mt-3 text-[26px] font-medium leading-tight sm:text-[30px]">
+              {t(c.owners.title)}
+            </h3>
+            <p className="mt-4 text-base leading-relaxed text-warm-white/75">{t(c.owners.intro)}</p>
+
+            <ul className="mt-6 space-y-3">
+              {c.owners.items.map((item) => (
+                <li key={item.es} className="flex gap-3 text-sm leading-relaxed text-warm-white/90">
+                  <Check size={18} className="mt-0.5 shrink-0 text-gold" aria-hidden="true" />
+                  {t(item)}
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-auto pt-8">
+              <a
+                href={whatsappOwners}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-gold w-full sm:w-auto"
               >
-                <div className="flex h-11 w-11 items-center justify-center rounded-full border border-gold/50 bg-warm-white text-gold-dark transition-colors group-hover:bg-gold group-hover:text-charcoal">
-                  <Icon size={20} strokeWidth={1.6} aria-hidden="true" />
-                </div>
-                <h3 className="mt-5 text-xl font-medium leading-snug text-charcoal">
-                  {t(item.title)}
-                </h3>
-                <p className="mt-3 flex-1 text-sm leading-relaxed text-charcoal/70">
-                  {t(item.description)}
-                </p>
-                {isProperties ? (
-                  <button
-                    type="button"
-                    onClick={handleProperties}
-                    className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-charcoal transition-colors hover:text-gold-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
-                  >
-                    {t(item.cta)}
-                    <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" />
-                  </button>
-                ) : (
-                  <a
-                    href={whatsappPrefilled}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-charcoal transition-colors hover:text-gold-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
-                  >
-                    {t(item.cta)}
-                    <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" />
-                  </a>
-                )}
-              </article>
-            );
-          })}
+                <MessageCircle size={16} />
+                {t(c.owners.cta)}
+              </a>
+            </div>
+          </article>
         </div>
       </div>
     </section>

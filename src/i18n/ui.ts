@@ -63,48 +63,60 @@ export const ui = {
     eyebrow: { es: 'Encuentra tu comunidad', en: 'Find your community' },
     title: { es: 'Una estadía pensada para tu camino', en: 'A stay shaped around your journey' },
     intro: {
-      es: 'Explora la forma de hospedaje que mejor se adapta a tus necesidades o conecta con Leev para conocer nuestros servicios.',
-      en: 'Explore the kind of stay that best fits your needs, or connect with Leev to learn about our services.',
+      es: 'Ya sea que busques dónde quedarte o que tengas un apartamento, en Leev hay un lugar para ti.',
+      en: "Whether you're looking for a place to stay or you own an apartment, there's a place for you at Leev.",
+    },
+    guests: {
+      label: { es: 'Huéspedes e inquilinos', en: 'Guests & tenants' },
+      title: { es: 'Busco dónde quedarme', en: "I'm looking for a place to stay" },
+      cta: { es: 'Ver estadías', en: 'View stays' },
     },
     executive: {
-      title: { es: 'Comunidad Ejecutiva', en: 'Executive Stays' },
+      title: { es: 'Ejecutivos', en: 'Business travelers' },
       description: {
-        es: 'Para profesionales y viajeros de negocios que buscan una base cómoda en Santiago.',
-        en: 'For professionals and business travelers looking for a comfortable base in Santiago.',
+        es: 'Una base cómoda y bien ubicada para viajes de trabajo, con internet y espacio para trabajar.',
+        en: 'A comfortable, well-located base for work trips, with internet and space to work.',
       },
-      cta: { es: 'Explorar estadías', en: 'Explore stays' },
-    },
-    tenants: {
-      title: { es: 'Comunidad de Inquilinos', en: 'Long-Term Living' },
-      description: {
-        es: 'Para quienes buscan explorar opciones amuebladas para una estadía prolongada.',
-        en: 'For people exploring furnished options for an extended stay.',
-      },
-      cta: { es: 'Consultar estadías largas', en: 'Ask about long stays' },
     },
     families: {
-      title: { es: 'Comunidad Familiar', en: 'Family Stays' },
+      title: { es: 'Familias', en: 'Families' },
       description: {
-        es: 'Para familias que necesitan comparar espacios según su composición y necesidades confirmadas.',
-        en: 'For families comparing spaces based on their composition and confirmed needs.',
+        es: 'Apartamentos de 2 y 3 habitaciones con cocina equipada para viajar con los tuyos.',
+        en: '2- and 3-bedroom apartments with a full kitchen for traveling with your family.',
       },
-      cta: { es: 'Ver propiedades', en: 'View properties' },
+    },
+    tenants: {
+      title: { es: 'Estadías largas', en: 'Long stays' },
+      description: {
+        es: 'Apartamentos amueblados por semanas o meses, listos para mudarte.',
+        en: 'Furnished apartments by the week or month, ready to move in.',
+      },
+    },
+    getaways: {
+      title: { es: 'Escapadas', en: 'Getaways' },
+      description: {
+        es: 'Unos días en Santiago, solo o en pareja, con vistas y piscina en la azotea.',
+        en: 'A few days in Santiago, solo or as a couple, with views and rooftop pools.',
+      },
     },
     owners: {
-      title: { es: 'Comunidad de Propietarios', en: 'Property Owners' },
-      description: {
-        es: 'Para propietarios interesados en conocer cómo Leev puede acompañar su operación.',
-        en: 'For property owners interested in learning how Leev can support their operation.',
+      label: { es: 'Propietarios', en: 'Property owners' },
+      title: {
+        es: '¿Tienes un apartamento? Nosotros lo administramos.',
+        en: 'Own an apartment? We manage it for you.',
       },
-      cta: { es: 'Hablar con Leev', en: 'Talk to Leev' },
-    },
-    hosts: {
-      title: { es: 'Comunidad de Anfitriones', en: 'Host Community' },
-      description: {
-        es: 'Para anfitriones y operadores que buscan conversar sobre servicios de apoyo para sus alojamientos.',
-        en: 'For hosts and operators interested in discussing support services for their stays.',
+      intro: {
+        es: 'Convertimos tu propiedad en una estadía Leev y nos encargamos del día a día para que tú solo veas los resultados.',
+        en: 'We turn your property into a Leev stay and handle the day-to-day, so you just see the results.',
       },
-      cta: { es: 'Contactar a Leev', en: 'Contact Leev' },
+      items: [
+        { es: 'Publicación en Airbnb con fotos profesionales', en: 'Airbnb listing with professional photos' },
+        { es: 'Precios y calendario para mantenerlo ocupado', en: 'Pricing and calendar to keep it booked' },
+        { es: 'Atención a los huéspedes, de la reserva a la salida', en: 'Guest care, from booking to check-out' },
+        { es: 'Limpieza y mantenimiento entre estadías', en: 'Cleaning and maintenance between stays' },
+        { es: 'Reportes claros de reservas e ingresos', en: 'Clear booking and income reports' },
+      ],
+      cta: { es: 'Quiero que Leev administre mi propiedad', en: 'I want Leev to manage my property' },
     },
   },
 
