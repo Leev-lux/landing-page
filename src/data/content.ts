@@ -76,7 +76,7 @@ export const services: ServiceItem[] = [
     ctaHref: '',
     ctaType: 'anchor',
     image: '/servicios/limpieza.jpg',
-    imageAlt: { es: 'Cama preparada con toallas limpias', en: 'Freshly made bed with clean towels' },
+    imageAlt: { es: 'Artículos de limpieza junto a un cuadro con el logo de Leev', en: 'Cleaning supplies next to a framed Leev logo' },
   },
 ];
 
