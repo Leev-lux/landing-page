@@ -10,19 +10,16 @@ import {
 } from '../data/properties';
 
 const footerNav = [
-  { id: 'propiedades', label: ui.nav.stays },
-  { id: 'servicios', label: ui.nav.about },
-  { id: 'guia', label: ui.nav.guide },
-  { id: 'contacto', label: ui.nav.contact },
+  { href: '/', label: ui.nav.home },
+  { href: '/estadias', label: ui.nav.stays },
+  { href: '/servicios', label: ui.nav.services },
+  { href: '/guia', label: ui.nav.guide },
+  { href: '/galeria', label: ui.nav.gallery },
+  { href: '/preguntas', label: ui.nav.faq },
 ];
 
 export function Footer() {
   const { t } = useLang();
-
-  const handleAnchor = (e: React.MouseEvent, id: string) => {
-    e.preventDefault();
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <footer className="border-t border-charcoal/10 bg-cream pt-16">
@@ -61,10 +58,9 @@ export function Footer() {
             </h3>
             <ul className="mt-4 space-y-3">
               {footerNav.map((link) => (
-                <li key={link.id}>
+                <li key={link.href}>
                   <a
-                    href={`#${link.id}`}
-                    onClick={(e) => handleAnchor(e, link.id)}
+                    href={link.href}
                     className="text-base text-charcoal/75 transition-colors hover:text-charcoal"
                   >
                     {t(link.label)}
