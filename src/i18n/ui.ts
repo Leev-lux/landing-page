@@ -7,6 +7,15 @@ export const ui = {
     en: 'Luxury stays in Santiago, D.R.',
   },
 
+  stayTypes: {
+    label: { es: 'Tipo de estadía', en: 'Type of stay' },
+    all: { es: 'Todos', en: 'All' },
+    families: { es: 'Familias', en: 'Families' },
+    executive: { es: 'Ejecutivos', en: 'Business' },
+    getaways: { es: 'Escapadas', en: 'Getaways' },
+    longStays: { es: 'Estadías largas', en: 'Long stays' },
+    see: { es: 'Ver apartamentos', en: 'See apartments' },
+  },
   meta: {
     homeTitle: { es: 'Apartamentos amueblados en Santiago', en: 'Furnished Apartments in Santiago' },
   },

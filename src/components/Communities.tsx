@@ -3,10 +3,10 @@ import { useLang, ui } from '../context/LanguageContext';
 import { whatsappOwners } from '../data/properties';
 
 const guestItems = [
-  { key: 'executive', icon: BriefcaseBusiness },
-  { key: 'families', icon: Home },
-  { key: 'tenants', icon: KeyRound },
-  { key: 'getaways', icon: Sun },
+  { key: 'executive', icon: BriefcaseBusiness, tipo: 'ejecutivos' },
+  { key: 'families', icon: Home, tipo: 'familias' },
+  { key: 'tenants', icon: KeyRound, tipo: 'estadias-largas' },
+  { key: 'getaways', icon: Sun, tipo: 'escapadas' },
 ] as const;
 
 export function Communities() {
@@ -35,17 +35,26 @@ export function Communities() {
             </h3>
 
             <ul className="mt-8 grid gap-6 sm:grid-cols-2">
-              {guestItems.map(({ key, icon: Icon }) => (
-                <li key={key} className="flex gap-4">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold/50 bg-warm-white text-gold-dark">
-                    <Icon size={20} strokeWidth={1.6} aria-hidden="true" />
-                  </span>
-                  <div className="min-w-0">
-                    <p className="text-lg font-medium text-charcoal font-display">{t(c[key].title)}</p>
-                    <p className="mt-1 text-sm leading-relaxed text-charcoal/70">
-                      {t(c[key].description)}
-                    </p>
-                  </div>
+              {guestItems.map(({ key, icon: Icon, tipo }) => (
+                <li key={key}>
+                  <a
+                    href={`/estadias?tipo=${tipo}`}
+                    className="group -m-3 flex gap-4 rounded-2xl p-3 transition-colors hover:bg-warm-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold"
+                  >
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold/50 bg-warm-white text-gold-dark transition-colors group-hover:bg-gold group-hover:text-charcoal">
+                      <Icon size={20} strokeWidth={1.6} aria-hidden="true" />
+                    </span>
+                    <span className="min-w-0">
+                      <span className="block text-lg font-medium text-charcoal font-display">{t(c[key].title)}</span>
+                      <span className="mt-1 block text-sm leading-relaxed text-charcoal/70">
+                        {t(c[key].description)}
+                      </span>
+                      <span className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-charcoal transition-colors group-hover:text-gold-dark">
+                        {t(ui.stayTypes.see)}
+                        <ArrowRight size={14} className="transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+                      </span>
+                    </span>
+                  </a>
                 </li>
               ))}
             </ul>

@@ -2,6 +2,12 @@ export type Lang = 'es' | 'en';
 
 export type Bilingual = { es: string; en: string };
 
+/**
+ * Tipos de estadía. Para cambiar en qué filtro aparece un apartamento,
+ * edita su lista `tags` más abajo.
+ */
+export type StayTag = 'familias' | 'ejecutivos' | 'escapadas' | 'estadias-largas';
+
 export interface PropertyRecord {
   id: string;
   airbnbId: string;
@@ -15,6 +21,8 @@ export interface PropertyRecord {
   bedrooms?: number;
   beds?: number;
   bathrooms?: number;
+  /** Tipos de estadía para los filtros de la página Estadías. */
+  tags?: StayTag[];
   /** true si el anuncio de Airbnb está desactivado: la tarjeta lleva a WhatsApp. */
   unlisted?: boolean;
 }
@@ -29,6 +37,7 @@ export interface PropertyRecord {
 export const properties: PropertyRecord[] = [
   {
     id: 'LEEV-01',
+    tags: ['familias', 'ejecutivos', 'estadias-largas'],
     airbnbId: '54195008',
     title: 'Lujosa Estadía | Soha Suites A11',
     location: 'Soha Suites, Santiago',
@@ -42,6 +51,7 @@ export const properties: PropertyRecord[] = [
   },
   {
     id: 'LEEV-02',
+    tags: ['familias', 'ejecutivos', 'escapadas', 'estadias-largas'],
     airbnbId: '1752233341333580825',
     title: 'Lujosa Vista | Soha Suites II B14',
     location: 'Soha Suites II, Santiago',
@@ -54,6 +64,7 @@ export const properties: PropertyRecord[] = [
   },
   {
     id: 'LEEV-03',
+    tags: ['familias', 'ejecutivos', 'estadias-largas'],
     airbnbId: '549129435277308587',
     title: 'Confort Urbano | Soha II A5',
     location: 'Soha Suites II, Santiago',
@@ -66,6 +77,7 @@ export const properties: PropertyRecord[] = [
   },
   {
     id: 'LEEV-04',
+    tags: ['ejecutivos', 'estadias-largas'],
     airbnbId: '545529207234719975',
     title: 'Bonito Apartamento | Soha Suites I C1',
     location: 'Soha Suites I, Santiago',
@@ -78,6 +90,7 @@ export const properties: PropertyRecord[] = [
   },
   {
     id: 'LEEV-05',
+    tags: ['familias', 'ejecutivos', 'escapadas', 'estadias-largas'],
     airbnbId: '545498928051919866',
     title: 'Soha Panorama A07',
     location: 'Soha Panorama, Santiago',
@@ -90,6 +103,7 @@ export const properties: PropertyRecord[] = [
   },
   {
     id: 'LEEV-06',
+    tags: ['familias', 'ejecutivos', 'escapadas', 'estadias-largas'],
     airbnbId: '655753195260415817',
     title: 'Encantador y Acogedor | Soha Panorama A14',
     location: 'Soha Panorama, Santiago',
@@ -102,6 +116,7 @@ export const properties: PropertyRecord[] = [
   },
   {
     id: 'LEEV-07',
+    tags: ['ejecutivos', 'escapadas', 'estadias-largas'],
     airbnbId: '692030630299002134',
     title: 'Apartamento de Lujo | Soha Panorama D2',
     location: 'Soha Panorama, Santiago',
@@ -114,6 +129,7 @@ export const properties: PropertyRecord[] = [
   },
   {
     id: 'LEEV-08',
+    tags: ['ejecutivos', 'escapadas', 'estadias-largas'],
     airbnbId: '786820800834863617',
     title: 'Departamento de Lujo | Soha Panorama C13',
     location: 'Soha Panorama, Santiago',
@@ -126,6 +142,7 @@ export const properties: PropertyRecord[] = [
   },
   {
     id: 'LEEV-09',
+    tags: ['ejecutivos', 'escapadas', 'estadias-largas'],
     airbnbId: '1351486858160113261',
     title: 'Piscina en la Azotea | TH Trinitaria A5',
     location: 'TH Trinitaria, Santiago',
@@ -138,6 +155,7 @@ export const properties: PropertyRecord[] = [
   },
   {
     id: 'LEEV-10',
+    tags: ['familias', 'estadias-largas'],
     airbnbId: '1766902402599087141',
     title: 'Espacio Familiar | 8 Brothers Tower A6',
     location: '8 Brothers Tower, Santiago',
@@ -151,6 +169,7 @@ export const properties: PropertyRecord[] = [
   },
   {
     id: 'LEEV-11',
+    tags: ['familias', 'estadias-largas'],
     airbnbId: '1769816300096020740',
     title: 'Hogar Familiar | 8 Brothers Tower A5',
     location: '8 Brothers Tower, Santiago',
@@ -163,6 +182,7 @@ export const properties: PropertyRecord[] = [
   },
   {
     id: 'LEEV-12',
+    tags: ['familias', 'ejecutivos', 'estadias-largas'],
     airbnbId: '1131828491006453848',
     title: 'Vista de Santiago | Barletta A10',
     location: 'Torre Barletta, Santiago',
@@ -177,6 +197,7 @@ export const properties: PropertyRecord[] = [
   },
   {
     id: 'LEEV-13',
+    tags: ['escapadas'],
     airbnbId: '792636543021249639',
     title: 'Suite Especial 01 | Villas Sixteen',
     location: 'Villas Sixteen, Moca',
@@ -189,6 +210,7 @@ export const properties: PropertyRecord[] = [
   },
   {
     id: 'LEEV-14',
+    tags: ['escapadas'],
     airbnbId: '1015810667406770695',
     title: 'Suite Especial 02 | Villas Sixteen',
     location: 'Villas Sixteen, Moca',
@@ -201,6 +223,7 @@ export const properties: PropertyRecord[] = [
   },
   {
     id: 'LEEV-15',
+    tags: ['escapadas'],
     airbnbId: '1086948751039018652',
     title: 'Suite Superior 03 | Villas Sixteen',
     location: 'Villas Sixteen, Moca',
@@ -213,6 +236,7 @@ export const properties: PropertyRecord[] = [
   },
   {
     id: 'LEEV-16',
+    tags: ['escapadas'],
     airbnbId: '1087594010023957905',
     title: 'Suite Superior 04 | Villas Sixteen',
     location: 'Villas Sixteen, Moca',
@@ -225,6 +249,7 @@ export const properties: PropertyRecord[] = [
   },
   {
     id: 'LEEV-17',
+    tags: ['familias', 'escapadas'],
     airbnbId: '1429711843610828548',
     title: 'Villa Santorini',
     location: 'La Romana',

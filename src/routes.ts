@@ -35,7 +35,7 @@ export function pageForSection(sectionId: string): PageDef | undefined {
 /** Client-side navigation: updates the address bar and tells the app to re-render. */
 export function navigateTo(path: string, hash = '') {
   const target = path + (hash ? `#${hash}` : '');
-  if (window.location.pathname + window.location.hash === target) return;
+  if (window.location.pathname + window.location.search + window.location.hash === target) return;
   window.history.pushState({}, '', target);
   window.dispatchEvent(new PopStateEvent('popstate'));
 }

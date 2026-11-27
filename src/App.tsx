@@ -46,10 +46,11 @@ function App() {
       if (!a || a.target === '_blank') return;
       const href = a.getAttribute('href');
       if (!href || !href.startsWith('/')) return;
-      const [path, hash = ''] = href.split('#');
+      const [pathAndQuery, hash = ''] = href.split('#');
+      const path = pathAndQuery.split('?')[0];
       if (pageForPath(path) || legalPaths.includes(path)) {
         e.preventDefault();
-        navigateTo(path, hash);
+        navigateTo(pathAndQuery, hash);
       }
     };
     document.addEventListener('click', onClick);
