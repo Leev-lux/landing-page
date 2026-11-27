@@ -7,7 +7,7 @@ export function FinalCTA() {
   const { t } = useLang();
 
   return (
-    <section id="contacto" className="scroll-mt-20 bg-charcoal py-20 lg:py-28">
+    <section id="contacto" className="scroll-mt-20 bg-forest py-20 lg:py-28">
       <div className="container-leev text-center">
         <div className="mx-auto mb-8 h-px w-16 bg-gold" />
         <h2 className="mx-auto max-w-3xl text-[28px] font-medium leading-tight text-warm-white sm:text-[34px] lg:text-[44px]">

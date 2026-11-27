@@ -172,14 +172,14 @@ export interface GalleryItem {
 }
 
 export const galleryImages: GalleryItem[] = [
-  { src: '/COMEDOR.jpg.jpeg', alt: { es: 'Cocina y comedor', en: 'Kitchen and dining' } },
-  { src: '/Captura_de_pantalla_2026-10-27_a_la(s)_10.28.56_a.m..png', alt: { es: 'Sala acogedora', en: 'Cozy living room' } },
-  { src: '/IMG_93033OIcWf.jpg', alt: { es: 'Balcón con vista a la montaña', en: 'Balcony with mountain view' } },
-  { src: '/Captura_de_pantalla_2026-10-27_a_la(s)_10.30.22_a.m..png', alt: { es: 'Habitación principal', en: 'Main bedroom' } },
-  { src: '/Captura_de_pantalla_2026-11-03_a_la(s)_3.48.25_p.m..png', alt: { es: 'Sala amplia con vista', en: 'Spacious living room with a view' } },
-  { src: '/Captura_de_pantalla_2026-10-27_a_la(s)_11.40.27_a.m..png', alt: { es: 'Sala con cortinas de lino', en: 'Living room with linen curtains' } },
-  { src: '/image.png', alt: { es: 'Comedor y cocina', en: 'Dining area and kitchen' } },
-  { src: '/Captura_de_pantalla_2026-10-27_a_la(s)_10.28.15_a.m..png', alt: { es: 'Sala con acentos de color', en: 'Living room with color accents' } },
+  { src: 'https://a0.muscache.com/im/pictures/miso/Hosting-545498928051919866/original/52a5a71c-1d58-439e-908b-9ae9aa6ee883.jpeg?im_w=1200', alt: { es: 'Piscina con vista a la ciudad, Soha Panorama', en: 'Pool overlooking the city, Soha Panorama' } },
+  { src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1766902402599087141/original/f51e52b3-b4b4-4046-90af-2806521d4244.jpeg?im_w=1200', alt: { es: 'Sala amplia, 8 Brothers Tower', en: 'Spacious living room, 8 Brothers Tower' } },
+  { src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM1MTQ4Njg1ODE2MDExMzI2MQ==/original/fc353aa3-b6fa-432a-aa7b-0b137edd4aa9.png?im_w=1200', alt: { es: 'Cocina y comedor, TH Trinitaria', en: 'Kitchen and dining, TH Trinitaria' } },
+  { src: 'https://a0.muscache.com/im/pictures/miso/Hosting-545498928051919866/original/0b690437-14ed-4a46-80bd-d82d134b8eae.jpeg?im_w=1200', alt: { es: 'Sala, Soha Panorama A07', en: 'Living room, Soha Panorama A07' } },
+  { src: 'https://a0.muscache.com/im/pictures/miso/Hosting-660682595089721584/original/b3b65663-a2d9-4b36-bfd1-305f00472c46.jpeg?im_w=1200', alt: { es: 'Torre Rialto B4', en: 'Torre Rialto B4' } },
+  { src: 'https://a0.muscache.com/im/pictures/miso/Hosting-545498928051919866/original/bf23ae60-1648-4cd2-aa57-617ffdb2f729.jpeg?im_w=1200', alt: { es: 'Cocina moderna, Soha Panorama', en: 'Modern kitchen, Soha Panorama' } },
+  { src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1674114200848615968/original/e479d82b-52e4-416e-8818-dcbc6da4bee1.jpeg?im_w=1200', alt: { es: '8 Brothers Tower B9', en: '8 Brothers Tower B9' } },
+  { src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1688728441025361991/original/05699994-275c-4058-8fa2-2dc9f258f3c0.jpeg?im_w=1200', alt: { es: 'Soha Panorama C2', en: 'Soha Panorama C2' } },
 ];
 
 /**

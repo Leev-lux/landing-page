@@ -6,14 +6,15 @@ export default {
       colors: {
         cream: '#F5F0E8',
         'warm-white': '#FAF9F6',
-        charcoal: '#1E1E1E',
+        charcoal: '#22332A', // verde muy oscuro de la marca para textos y fondos oscuros
+        forest: '#304532', // verde del logo
         gold: '#C6A77B',
         'gold-dark': '#A88A5E',
         beige: '#E8DCCF',
       },
       fontFamily: {
-        display: ['"Playfair Display"', 'serif'],
-        body: ['Inter', 'sans-serif'],
+        display: ['"Bodoni Moda"', 'Didot', 'Georgia', 'serif'],
+        body: ['Jost', '"Helvetica Neue"', 'Arial', 'sans-serif'],
       },
       maxWidth: {
         '8xl': '88rem',
