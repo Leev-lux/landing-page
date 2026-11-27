@@ -68,7 +68,7 @@ export function Communities() {
           </article>
 
           {/* Property owners */}
-          <article className="flex flex-col rounded-3xl bg-charcoal p-6 text-warm-white sm:p-8 lg:p-10">
+          <article className="flex flex-col rounded-3xl bg-forest p-6 text-warm-white sm:p-8 lg:p-10">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold">
               {t(c.owners.label)}
             </p>
