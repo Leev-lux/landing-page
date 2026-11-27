@@ -16,6 +16,11 @@ export default {
         display: ['"Bodoni Moda"', 'Didot', 'Georgia', 'serif'],
         body: ['Jost', '"Helvetica Neue"', 'Arial', 'sans-serif'],
       },
+      // Jost se ve más pequeña que Inter al mismo tamaño: se compensan los textos.
+      fontSize: {
+        sm: ['0.9375rem', { lineHeight: '1.45rem' }], // 15px
+        base: ['1.0625rem', { lineHeight: '1.7rem' }], // 17px
+      },
       maxWidth: {
         '8xl': '88rem',
       },

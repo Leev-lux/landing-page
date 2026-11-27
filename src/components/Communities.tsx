@@ -30,7 +30,7 @@ export function Communities() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold-dark">
               {t(c.guests.label)}
             </p>
-            <h3 className="mt-3 text-[26px] font-medium leading-tight text-charcoal sm:text-[30px]">
+            <h3 className="mt-3 text-[26px] font-medium leading-tight text-charcoal sm:text-[28px]">
               {t(c.guests.title)}
             </h3>
 
@@ -45,7 +45,7 @@ export function Communities() {
                       <Icon size={20} strokeWidth={1.6} aria-hidden="true" />
                     </span>
                     <span className="min-w-0">
-                      <span className="block text-lg font-medium text-charcoal font-display">{t(c[key].title)}</span>
+                      <span className="block text-xl font-medium text-charcoal font-display">{t(c[key].title)}</span>
                       <span className="mt-1 block text-sm leading-relaxed text-charcoal/70">
                         {t(c[key].description)}
                       </span>
@@ -72,7 +72,7 @@ export function Communities() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold">
               {t(c.owners.label)}
             </p>
-            <h3 className="mt-3 text-[26px] font-medium leading-tight sm:text-[30px]">
+            <h3 className="mt-3 text-[26px] font-medium leading-tight sm:text-[28px]">
               {t(c.owners.title)}
             </h3>
             <p className="mt-4 text-base leading-relaxed text-warm-white/75">{t(c.owners.intro)}</p>

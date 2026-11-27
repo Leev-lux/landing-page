@@ -130,7 +130,7 @@ export function SantiagoGuide() {
                     <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-gold-dark">
                       {categoryLabel(p.category)}
                     </p>
-                    <h3 className="mt-1 text-lg font-medium leading-snug text-charcoal">{p.name}</h3>
+                    <h3 className="mt-1 text-xl font-medium leading-snug text-charcoal">{p.name}</h3>
                     <p className="mt-1 text-sm leading-relaxed text-charcoal/65">{t(p.note)}</p>
                     {p.phone && (
                       <a
