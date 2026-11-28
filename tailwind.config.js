@@ -13,8 +13,7 @@ export default {
         beige: '#E8DCCF',
       },
       fontFamily: {
-        // Times New Roman; Tinos (Google Fonts) la reemplaza donde no está instalada.
-        display: ['"Times New Roman"', 'Times', 'Tinos', 'serif'],
+        display: ['"Playfair Display"', 'Georgia', 'serif'],
         body: ['Jost', '"Helvetica Neue"', 'Arial', 'sans-serif'],
       },
       // Jost se ve más pequeña que Inter al mismo tamaño: se compensan los textos.
